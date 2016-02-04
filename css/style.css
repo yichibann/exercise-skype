@@ -1,0 +1,784 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @authors zhangyizhi (zhangyizhi95@sina.com)
+ * @date    2015-11-16 16:59:37
+ */
+
+
+/*icon*/
+
+@font-face {
+    font-family: 'skype';
+    src: url('../font/skype.eot?59009966');
+    src: url('../font/skype.eot?59009966#iefix') format('embedded-opentype'), url('../font/skype.woff?59009966') format('woff'), url('../font/skype.ttf?59009966') format('truetype'), url('../font/skype.svg?59009966#skype') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+
+
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+
+
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'skype';
+    src: url('../font/skype.svg?59009966#skype') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "skype";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    /*  margin-right: .2em;*/
+    text-align: center;
+    /* opacity: .8; */
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    /*  margin-left: .2em;*/
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-heart:before {
+    content: '\e800';
+}
+
+
+/* '' */
+
+.icon-users:before {
+    content: '\e801';
+}
+
+
+/* '' */
+
+.icon-cancel:before {
+    content: '\e802';
+}
+
+
+/* '' */
+
+.icon-chat:before {
+    content: '\e803';
+}
+
+
+/* '' */
+
+.icon-comment:before {
+    content: '\e804';
+}
+
+
+/* '' */
+
+.icon-plus:before {
+    content: '\e805';
+}
+
+
+/* '' */
+
+.icon-user-plus:before {
+    content: '\e806';
+}
+
+
+/* '' */
+
+.icon-phone:before {
+    content: '\e807';
+}
+
+
+/* '' */
+
+.icon-down-dir:before {
+    content: '\e808';
+}
+
+
+/* '' */
+
+.icon-menu:before {
+    content: '\e809';
+}
+
+
+/* '' */
+
+.icon-vert:before {
+    content: '\e80a';
+}
+
+
+/* '' */
+
+.icon-star:before {
+    content: '\e80b';
+}
+
+
+/* '' */
+
+.icon-search:before {
+    content: '\e80c';
+}
+
+
+/* '' */
+
+.icon-skype:before {
+    content: '\e80d';
+}
+
+
+/* '' */
+
+.icon-user:before {
+    content: '\e80e';
+}
+
+
+/* '' */
+
+.icon-minus:before {
+    content: '\e810';
+}
+
+
+/* '' */
+
+.icon-cog:before {
+    content: '\e811';
+}
+
+
+/* '' */
+
+.icon-credit-card:before {
+    content: '\e812';
+}
+
+
+/* '' */
+
+.icon-help:before {
+    content: '\e813';
+}
+
+
+/* '' */
+
+.icon-logout:before {
+    content: '\e814';
+}
+
+
+/* '' */
+
+.ui-loading .ui-loader {
+    display: none;
+}
+
+.ui-loader {
+    display: none;
+    position: absolute;
+    opacity: .85;
+    z-index: 100;
+    left: 50%;
+    width: 200px;
+    margin-left: -130px;
+    margin-top: -35px;
+    padding: 10px 30px;
+}
+
+
+/*color*/
+
+.green {
+    color: #7fba00;
+}
+
+.blue {
+    color: #00aff0;
+}
+
+.orange {
+    color: #ff7f00;
+}
+
+.gray {
+    color: #737373;
+}
+
+.lt-gray {
+    color: #a3a3a3;
+}
+
+.dark-gray {
+    color: #4c4c4c;
+}
+
+.bg-green {
+    background-color: #7fba00;
+}
+
+.bg-blue {
+    background-color: #00aff0;
+}
+
+.bg-gray {
+    background-color: #585858;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+
+/*style*/
+
+.text-bold {
+    font-weight: bold;
+}
+
+.box-shadow {
+    -moz-box-shadow: 0px 1px 3px 0.5px #d5d5d5;
+    box-shadow: 0px 1px 3px 0.5px #d5d5d5;
+}
+
+.text-verticle-middle {
+    vertical-align: middle;
+    display: inline-block;
+    height: 100%;
+    width: 0px;
+    margin-left: -7px;
+}
+
+.title {
+    font-size: 16px;
+}
+
+.border-btm {
+    border-bottom: solid 1.5px #dcdcdc;
+}
+
+
+
+
+/*user-status*/
+
+.online {
+    background-color: #7fba00;
+}
+
+.busy {
+    background-color: #ff7f00;
+}
+
+
+/*--------------------------------------------------------------------------*/
+
+.skype {
+    /*display: none;*/
+}
+
+.avaliable {
+    display: none;
+}
+
+.drawer {
+    /*   display: none;*/
+}
+
+
+.tx1,
+.tx2,
+.tx3,
+.fabli,
+.fabic,
+.fab-bg {
+    display: none;
+}
+
+
+/*--------------------------------------------------------------------------*/
+
+
+body {
+    font-family: Roboto;
+    background-color: #eee
+}
+
+ul {
+    list-style: none;
+}
+
+i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+i[class^=icon-menu] {
+    margin-right: 28px;
+}
+
+i[class=icon-vert] {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+i[class=icon-search] {
+    position: absolute;
+    top: 16px;
+    right: 52px;
+    font-size: 18px;
+}
+
+i[class=icon-down-dir] {
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.logo {
+    vertical-align: middle;
+    font-weight: bold;
+    color: #Fff;
+    opacity: 0.9;
+}
+
+/*.switch-panel{
+	padding: 5px 3px;
+
+		position: relative;
+		left: -90px;
+		top:48px;
+		display: none;
+		border: 1px solid #eee;
+		border-top: 0;
+	    background: #FFF;
+		z-index: 100;
+
+}
+.switch-panel:hover{
+	background: #eee;
+	color: #fff;
+}*/
+.nav {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 55px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 20px;
+    font-weight: bold;
+/*    overflow: hidden;*/
+    color: #fff;
+}
+
+.container {
+    margin-top: 55px;
+}
+
+.wrapper {
+    margin-top: 6px;
+    display: inline-block;
+    margin-left: 32px;
+    vertical-align: middle;
+    line-height: 6px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.noti {
+    margin-left: 15px;
+    display: inline-block;
+    color: #737373;
+}
+
+.time {
+    position: absolute;
+    right: 16px;
+    top: 28px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.box {
+    position: relative;
+    vertical-align: middle;
+    padding: 0px 16px;
+    height: 71px;
+    border-bottom: 1.5px solid #e0e0e0;
+    background-color: #fff;
+}
+
+.box:hover {
+    background-color: #eee;
+}
+
+.recent {
+    padding: 14px 0 14px 16px;
+    z-index: 100;
+}
+
+.avatar {
+    display: inline-block;
+    margin-right: -25px;
+    vertical-align: middle;
+    background: url("../img/avatar.png") no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.ava-1 {
+    background-position: 0 0;
+}
+
+.ava-2 {
+    background-position: 0 -40px;
+}
+
+.ava-3 {
+    background-position: 0 -80px;
+}
+
+.ava-4 {
+    background-position: 0 -120px;
+}
+
+.ava-5 {
+    background-position: 0 -160px;
+}
+
+.online {
+    position: relative;
+}
+
+.online:after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: solid white 2px;
+    background-color: #7fba00;
+}
+
+.busy {
+    position: relative;
+}
+
+.busy:after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: solid white 2px;
+    background-color: #ff7f00;
+}
+
+
+/*-------------------------------------------------------------------*/
+
+.fab {
+    background: linear-gradient(#63cdf4, #08a8e4);
+    font-family: "microsoft yahei";
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    position: fixed;
+    right: 32px;
+    bottom: 60px;
+    z-index: 999;
+    -moz-box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+    z-index: 98;
+    text-align: center;
+
+}
+
+.fab:after {
+    content: '';
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    background-color: #00aff0;
+}
+
+.fab-p {
+    font-size: 14px;
+    color: #fff;
+    margin: auto;
+    position: absolute;
+    margin-top: -11px;
+    top: 50%;
+    left: 0;
+    right: 0;
+
+    z-index: 99;
+}
+
+.fab-m {
+  font-size: 14px;
+    color: #fff;
+    margin: auto;
+    position: absolute;
+    margin-top: -4px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    display: none;
+}
+
+.fab-open {
+    z-index: 99;
+}
+
+.fab-bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f0f0f0;
+    opacity: 0.8;
+    z-index: 10;
+}
+
+.fabli {
+    position: fixed;
+    background: linear-gradient(#63cdf4, #08a8e4);
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    /*    right: 32px;
+    bottom: 60px;*/
+    z-index: 999;
+    -moz-box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    z-index: 98;
+}
+
+.fabli:after {
+    content: '';
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    background-color: #00aff0;
+}
+
+.fabli.li1 {
+    position: fixed;
+    right: 38px;
+    bottom: 140px;
+}
+
+.fabli.li2 {
+    position: fixed;
+    right: 38px;
+    bottom: 210px;
+}
+
+.fabli.li3 {
+    position: fixed;
+    right: 38px;
+    bottom: 280px;
+}
+
+.fab-open i {
+    position: fixed;
+    color: #fff;
+    z-index: 99;
+}
+
+i[class^="icon-phone"] {
+    right: 52px;
+    bottom: 153px;
+}
+
+i[class^="icon-chat"] {
+    font-size: 12px;
+    right: 55.5px;
+    bottom: 226px;
+}
+
+i[class^="icon-user-plus"] {
+    right: 52px;
+    bottom: 295px;
+}
+
+.fab-menu li div:first-child {
+    position: fixed;
+    border-radius: 2px;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 15px;
+    height: 25px;
+    color: #585858;
+    background: #fff;
+    z-index: 99;
+    line-height: 1.7;
+}
+
+.tx1 {
+    right: 100px;
+    bottom: 286px;
+}
+
+.tx2 {
+    right: 100px;
+    bottom: 144px;
+}
+
+.tx3 {
+    right: 100px;
+    bottom: 217px;
+}
+
+
+/*===================================================================*/
+
+.dim {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: none;
+}
+
+.drawer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -310px;
+    background: #fff;
+    width: 300px;
+    height: 100%;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.4);
+    z-index: 101;
+}
+
+.dw-header {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+.user-avatar-bg {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background: url("../img/user-avatar.png") no-repeat;
+    -webkit-background-size: 300px auto;
+    background-size: 300px auto;
+    background-position: 0 -100px;
+    opacity: 0.15;
+}
+
+.user-avatar {
+    margin-top: 17px;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: url("../img/user-avatar.png");
+    -webkit-background-size: 64px 64px;
+    background-size: 64px 64px;
+}
+
+.user-info {
+    font-size: 14px;
+    line-height: 0;
+    color: #fff;
+}
+
+.user-info p:first-child {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/*content*/
+
+
+/*.dw-container {
+    margin: 0 16px;
+}*/
+
+.dw-container > div {
+    padding: 0 16px;
+    font-size: 14px;
+    height: 62px;
+    line-height: 3;
+    position: relative;
+}
+
+.dw-container > div:hover {
+    background: #eee;
+}
+
+.dw-container > div i {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 26px;
+}
+
+.status {
+    position: absolute;
+    right: 16px;
+    top: 8px;
+}
